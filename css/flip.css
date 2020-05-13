@@ -1,0 +1,118 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #7CF7F7;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* INICIO CSS PARA O GRID CARD INICIO */
+.grid {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-column-gap: 30px;
+}
+.center {
+	justify-content: center;
+}
+.grid > div {
+  background: transparent;
+  padding: 0.5px;
+  margin-bottom: 30px;
+}
+/* FIM CSS PARA O GRID CARD FIM */
+
+@font-face {
+  font-family: beleren;
+  src:url("font/Beleren2016SmallCaps-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#titulo{
+    font-family: beleren;
+    margin: 0;
+    padding-top: 30px;
+    /*color: #00539F;*/
+    color: #ffffff;
+    text-shadow: 2px 2px 1px black;
+    font-size: 60px;
+    text-align: center;
+}
+
+#subtitulo{
+    margin: 0;
+    padding-bottom: 30px;
+    /*color: #00539F;*/
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    font-size: 30px;
+    text-align: center;
+}
+
+#descricao-canal{
+  font-size: 10px;
+  padding: 0 20px 0 20px;
+  text-align: center;
+}
+
+#fundo{
+  margin: 0;
+  padding: 0;
+  background-color: #CCCCCC;
+  /*background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png"), url("../img/fundo.jpg");*/
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
+
+#rodape{
+  font-family: serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
