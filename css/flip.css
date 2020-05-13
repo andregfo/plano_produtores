@@ -43,6 +43,19 @@
   color: white;
   transform: rotateY(180deg);
 }
+.flip-card-back h1 {  
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+
+.flip-card-back p {
+  color: whitesmoke;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px
+}
 
 /* INICIO CSS PARA O GRID CARD INICIO */
 .grid {
@@ -90,8 +103,9 @@
 }
 
 #descricao-canal{
-  font-size: 10px;
-  padding: 0 20px 0 20px;
+  font-size: 14px;
+  padding: 0;
+  margin: 5px;
   text-align: center;
 }
 
@@ -116,3 +130,21 @@ body{
   margin: 0;
   padding: 0;
 }
+
+.apoio{
+  background-color: red;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  writing-mode:sideways-lr;
+  text-align: center;
+}
+
+.apoio h1 {
+  margin: 0;
+}
+
+
+</h1>
+            <hr width="120px" color="white">
+<p>
